@@ -32,6 +32,7 @@ export default function CustomizeProduct() {
     qty: 0,
     label: "",
     paymentMethod: "",
+    labelPosition: { x: 50, y: 50 }, // Add default position
   });
 
   const update =
