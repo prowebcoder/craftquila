@@ -139,11 +139,11 @@ export default function StepLabel({
           className="hidden"
         />
 
-        <div className="text-sm text-gray-500">
+        {/* <div className="text-sm text-gray-500">
           <p>• Drag label to position</p>
           <p>• PNG/JPG (max 2MB)</p>
           <p>• Click 'Center Label' to reset position</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
