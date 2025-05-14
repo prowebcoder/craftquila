@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.responsive {
+  @apply flex-col lg:flex-row items-center;
+}
+
+.standard-padding {
+  @apply px-8 sm:px-8 md:px-16 lg:px-32 xl:px-64 2xl:px-96;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 246, 246, 246;
+  --background-end-rgb: 246, 246, 246;
+}
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}*/
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Add to globals.css */
+ol {
+  counter-reset: step;
+}
+ol li {
+  counter-increment: step;
+}
+/* ol li::before {
+  content: counter(step);
+  @apply mr-2 font-bold;
+} */
+
+.flex.flex-2.flex-col.collapse {
+  display: none;
+}
